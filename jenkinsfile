@@ -1,1 +1,8 @@
-
+node{
+  stage('SCM Checkout'){
+  git 'https://github.com/meenaashi-it21/devpos'
+  }
+  stage('Compile-Package){
+  sh 'mvn package'
+  }
+  }
